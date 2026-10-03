@@ -30,7 +30,3 @@ jobs:
       run: |
         env | grep "PRIVADO_" > $GITHUB_WORKSPACE/.privado.env
         docker run -t -v $GITHUB_WORKSPACE:/privado --env-file $GITHUB_WORKSPACE/.privado.env --pull=always $PRIVADO_DOCKER_IMAGE
-
-      run: |
-        env | grep "PRIVADO_" > $GITHUB_WORKSPACE/.privado.env
-        docker run -t -v $GITHUB_WORKSPACE:/privado --env-file $GITHUB_WORKSPACE/.privado.env --pull=always $PRIVADO_DOCKER_IMAGE
