@@ -7,17 +7,17 @@ jobs:
     if: github.ref_name == github.event.repository.default_branch
     env:
       PRIVADO_API_TOKEN: ${{ secrets.PRIVADO_API_TOKEN }}
-      PRIVADO_API_ID: "7687738890326119CDE26EED"
-      PRIVADO_API_HOST: "https://mobile-app-test.gcp.privado-dev.com"
+      PRIVADO_API_ID: "d8a84652-e095-43e5-b0c7-2d3d9addd486"
+      PRIVADO_API_HOST: "https://api.code.privado.ai/prod"
       PRIVADO_CI_PLATFORM: "GITHUB_ACTIONS"
-      PRIVADO_DOCKER_IMAGE: 638117407428.dkr.ecr.ap-south-1.amazonaws.com/scanner-agent:latest
+      PRIVADO_DOCKER_IMAGE: 638117407428.dkr.ecr.eu-west-1.amazonaws.com/scanner-agent:latest
       PRIVADO_REPOSITORY_ID: ${{ github.repository_id }}
       PRIVADO_REPOSITORY_NAME: ${{ github.repository }}
       PRIVADO_COMMIT_ID: ${{ github.sha }}
       PRIVADO_BRANCH_NAME: ${{ github.ref_name }}
       PRIVADO_DEFAULT_BRANCH_NAME: ${{ github.event.repository.default_branch }}
       PRIVADO_REPOSITORY_URL: ${{ github.repositoryUrl }}
-      PRIVADO_MOBILE_APPLICATION_ID: "7a315ed0-2872-4b6e-a5e8-a8be12ead3f3"
+      PRIVADO_MOBILE_APPLICATION_ID: "a5ab7a9b-286a-4e91-a403-c67b287520f1"
     
     steps:
     - uses: actions/checkout@v4
